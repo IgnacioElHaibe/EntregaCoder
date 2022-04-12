@@ -49,6 +49,11 @@ h2 span{
     color: rgb(57, 248, 57);
 }
 
+.logoIndex{
+    height: 10vw;
+    width: 10vw;
+}
+
 /* ESTILOS DE NAV */
 
 .sinSubrayar{
