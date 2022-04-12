@@ -49,6 +49,11 @@ h2 span{
     color: rgb(57, 248, 57);
 }
 
+.logoIndex{
+    width:  5vw;
+    height: 5vw;
+
+}
 /* ESTILOS DE NAV */
 
 .sinSubrayar{
@@ -227,6 +232,7 @@ footer span{
 .headerIndex{
     grid-area: header;
     width: 100%;
+    padding: 0%;
     background-image: url("../clase_0/img/logotp2.png") ;
     background-repeat: no-repeat;
     background-position: center;
