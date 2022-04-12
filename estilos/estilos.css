@@ -226,7 +226,7 @@ footer span{
 
 .headerIndex{
     grid-area: header;
-    max-width: 2000px;
+    width: 100%;
     background-image: url("../clase_0/img/logotp2.png") ;
     background-repeat: no-repeat;
     background-position: center;
