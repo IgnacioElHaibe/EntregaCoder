@@ -276,6 +276,17 @@ footer{
          background-position: center;  
   
         }
+ 
+        nav span{
+            text-decoration: none;
+            background-color: rgb(9, 9, 9);
+            color: white;
+            margin: 0%;
+            padding: 10px 10px;
+            width: 20%;
+            border: ridge 10px rgb(246, 139, 9);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }     
  }
 
  /* SmartPhone */
@@ -284,6 +295,17 @@ footer{
      body{
          background-color: rgb(221, 43, 43);
      }
+
+     nav span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 0%;
+        padding: 10px 10px;
+        width: 20%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
  }
 
 
