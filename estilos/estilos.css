@@ -271,11 +271,15 @@ footer{
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px){
      body{
-         background-image: url(../clase_0/img/eventoUno.png);
-         background-repeat: no-repeat;
-         background-position: center;  
-  
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
         }
+
+     .mainFooter{
+         bottom: 0%;
+         margin-top: auto;
+     }   
  
         nav span{
             text-decoration: none;
@@ -286,15 +290,27 @@ footer{
             width: 20%;
             border: ridge 10px rgb(246, 139, 9);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }     
+        }    
+        
+     .logo{
+         width: 70%;
+         height: 30%;
+     }   
  }
 
  /* SmartPhone */
 
  @media (max-width: 479px){
-     body{
-         background-color: rgb(221, 43, 43);
-     }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+
+     .mainFooter{
+         bottom: 0%;
+         margin-top: auto;
+     }   
 
      nav span{
         text-decoration: none;
