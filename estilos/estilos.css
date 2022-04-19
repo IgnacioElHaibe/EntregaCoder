@@ -322,6 +322,11 @@ footer{
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    .logo{
+        width: 70%;
+        height: 30%;
+    }   
  }
 
 
