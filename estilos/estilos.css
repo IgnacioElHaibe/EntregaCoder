@@ -10,6 +10,7 @@ body{
     height: 40vw;
 }
 
+
 h1{
     color: wheat;
     text-align: center;
@@ -39,9 +40,9 @@ nav span{
     text-decoration: none;
     background-color: rgb(9, 9, 9);
     color: white;
-    margin: 0%;
-    padding: 10px 10px;
-    width: 10%;
+    margin: 1%;
+    padding: 3%;
+    width: 30%;
     border: ridge 10px rgb(246, 139, 9);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -66,6 +67,12 @@ section{
 /*Estilos main Wiki */
 
 
+.sectionWiki{
+    width: 100%;
+    height: 80%;
+}
+
+/*
 .fondoWiki{
     background-color: black;
 }
@@ -99,10 +106,6 @@ li span{
 
 /* ESTILOS de MAIN IMAGENES */
 
-#fondoImagenes{
-    background-color: black;
-   }
-
 .imagenes{
     width:  35vw;
     height: 35vw;
@@ -110,10 +113,16 @@ li span{
 }
 
 .divImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     width: 50%;
-    height: 50%;
+    height: 100%;
     }
-  
+
+    
+
 /* Estilos de MAIN VIDEOS*/
 
 .videos{
@@ -216,11 +225,7 @@ footer span{
     grid-area: header;
     width: 100%;
     padding: 0%;
-    background-image: url("../clase_0/img/logotp2.png") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30%;
-} 
+   } 
 
 
 nav{
@@ -248,15 +253,111 @@ footer{
     justify-content: space-evenly;
 }
 
-/*GRID IMAGENES/VIDEOS */
+/* GRID WIKI */
 
-.gridImagenYVideo{
+.gridWiki{
     display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-template-rows: 40vw 40vw;
-    justify-content: space-evenly;
-    
+    grid-template-areas:
+    "headerWiki"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+
 }
+
+.headerWiki{grid-area: headerWiki;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.mainWiki{
+    grid-area: contenido;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    margin: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.footerWiki{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+/* GRID IMAGENES */
+
+.gridImagenes{
+    display: grid;
+    grid-template-areas:
+    "headerImagenes"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.headerImagenes{
+    grid-area: headerImagenes;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    background-image: url("../clase_0/img/logotp2.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+} 
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.mainImagenes{
+    grid-area: contenido;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    margin: 3%;
+}
+
+.footerImagenes{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
 
 /* RESPONSIVE MEDIA QUERIES */
 
@@ -280,18 +381,15 @@ footer{
          bottom: 0%;
          margin-top: auto;
      }   
+     
+
+    
+     .logoImagenes{
+        width: 60%;
+        height: 50%;
+    }  
  
-        nav span{
-            text-decoration: none;
-            background-color: rgb(9, 9, 9);
-            color: white;
-            margin: 0%;
-            padding: 10px 10px;
-            width: 20%;
-            border: ridge 10px rgb(246, 139, 9);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }    
-        
+              
      .logo{
          width: 70%;
          height: 30%;
@@ -318,10 +416,15 @@ footer{
         color: white;
         margin: 5%;
         padding: 10px 10px;
-        width: 25%;
+        width: 35%;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    .logoImagenes{
+        width: 100%;
+        height: 70%;
+    }  
 
     .logo{
         width: 70%;
