@@ -1,0 +1,757 @@
+/* ESTILO DE BODY - HEADER */
+*{
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+body{
+    width: 100%;
+    height: 40vw;
+}
+
+
+h1{
+    color: wheat;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 0%;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    text-align: center;    
+    color: wheat;
+    margin: 2%;
+    padding: 2%;
+ }
+
+
+ /* ESTILOS DE NAV */
+
+.sinSubrayar{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}    
+
+/* GRIDS INDEX */
+
+#gridIndex{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.headerIndex{
+    grid-area: header;
+    width: 100%;
+    padding: 0%;
+   } 
+
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    span:hover{
+        background-color: rgb(16, 162, 87);
+        
+    } 
+}
+
+
+main{
+    grid-area: contenido;
+}
+
+footer{
+    grid-area: footer;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    span{
+        color: wheat;
+        margin-left: 10px;
+    }
+}
+
+/* ESTILOS MAIN - INDEX */
+
+section{
+    text-align: center;
+    margin: 50px 50px;
+}
+
+.videoIndex{
+    width:  60vw;
+    height: 40vw;
+}
+
+/* GRID WIKI */
+
+.gridWiki{
+    display: grid;
+    grid-template-areas:
+    "headerWiki"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+
+}
+
+.headerWiki{grid-area: headerWiki;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    span:hover{
+        background-color: rgb(16, 162, 87);
+        
+    } 
+}
+
+.mainWiki{
+    grid-area: contenido;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    margin: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.footerWiki{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+/*Estilos main Wiki */
+
+
+.sectionWiki{
+    width: 100%;
+    height: 80%;
+}
+
+/* GRID IMAGENES */
+
+.gridImagenes{
+    display: grid;
+    grid-template-areas:
+    "headerImagenes"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.headerImagenes{
+    grid-area: headerImagenes;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    background-image: url("../clase_0/img/logotp2.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+} 
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    span:hover{
+        background-color: rgb(16, 162, 87);
+        
+    } 
+}
+
+.mainImagenes{
+    grid-area: contenido;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    margin: 3%;
+}
+
+.footerImagenes{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+/* ESTILOS de MAIN IMAGENES */
+
+.imagenes{
+    width:  35vw;
+    height: 35vw;
+
+}
+
+.divImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    }
+
+/* GRID VIDEOS */
+
+.gridVideos{
+    display: grid;
+    grid-template-areas:
+    "headerVideo"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.headerVideo{
+    grid-area: headerVideo;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+} 
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    span:hover{
+        background-color: rgb(16, 162, 87);
+        
+    } 
+}
+
+.mainVideos{
+    grid-area: contenido;
+    padding: 3%;
+    margin:3%;
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: nowrap; 
+    justify-content: center center;
+   }
+
+.footerVideos{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+/* Estilos de MAIN VIDEOS*/
+
+.videos{
+    width:  40vw;
+    height: 40vw;
+    margin: 5%;
+    
+}
+
+/* GRID RANKING */
+
+.gridRanking{
+    display: grid;
+    grid-template-areas:
+    "headerRanking"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.headerRanking{
+    grid-area: headerRanking;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+} 
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    span:hover{
+        background-color: rgb(16, 162, 87);
+        
+    } 
+}
+
+.mainRanking{
+    grid-area: contenido;
+    padding: 3%;
+    margin:3%;
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: nowrap; 
+    justify-content: center center;
+   }
+
+.footerRanking{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+/* ESTILOS MAIN RANKING */
+section{
+    article{
+    }
+    h2{
+        text-decoration: underline;
+        color: wheat;
+    }
+    ol{
+        display: inline-block;
+        color: orange;
+        line-height: 2;
+    }
+}
+
+
+
+.imagenUno{
+    background-image: url(../img/eventouno.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 33vw;
+    }
+
+.imagenDos{
+    background-image: url(../img/eventodos.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 33vw;
+    }
+
+.imagenTres{
+    background-image: url(../img/eventoseis.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 33vw;
+    }   
+
+.imagenCuatro{
+    background-image: url(../img/eventocinco.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 28vw;
+}
+
+
+/* GRID INICIAR SESION */
+
+
+.gridAcceder{
+    display: grid;
+    grid-template-areas:
+    "headerAcceder"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.headerAcceder{
+    grid-area: headerAcceder;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+} 
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    span:hover{
+        background-color: rgb(16, 162, 87);
+        
+    } 
+}
+
+.mainAcceder{
+    grid-area: contenido;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: nowrap; 
+    justify-content: center center;
+   }
+
+.footerAcceder{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+/* ESTILOS MAIN INICIAR SESION */
+
+form{
+    color: burlywood;
+    text-align: center;
+    margin: 30px 30px;
+    padding: 80px 10px;
+    height: 40vw;
+    line-height: 3;
+    background-image: url(../img/logotp2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 500px;
+   }
+
+.nombreCuenta{
+    border: solid 5px grey;
+    padding: 5px 10px;
+    margin: 20px;
+    }
+
+.password{
+        border: solid 5px grey;
+        padding: 5px 39px;
+        margin: 20px;
+        }
+
+
+/* GRID REGISTRARSE */
+
+.gridRegistrarse{
+    display: grid;
+    grid-template-areas:
+    "headerRegistrarse"
+    "menu"
+    "contenido"
+    "footer";
+    background-color: black;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.headerRegistrarse{
+    grid-area: headerRegistrarse;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+} 
+
+nav{
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 1%;
+        padding: 1%;
+        width: 30%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    span:hover{
+        background-color: rgb(16, 162, 87);
+        
+    } 
+}
+
+.mainRegistrarse{
+    grid-area: contenido;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: nowrap; 
+    justify-content: center center;
+   }
+
+.footerRegistrarse{
+    grid-area: footer;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+/* ESTILOS MAIN REGISTRARSE */
+
+.estiloFormulario{
+    height: 50vw;
+    background-position: bottom;
+}
+
+
+.nombreCuentaRegistro{
+    border: solid 5px grey;
+    padding: 5px 85px;
+    margin: 20px;
+    }
+    
+.email {
+        border: solid 5px grey;
+        padding: 5px 90px;
+        margin: 20px;
+        }
+.password{
+        border: solid 5px grey;
+        padding: 5px 80px;
+        margin: 20px;
+        }
+
+
+.confirmar{
+            border: solid 5px grey;
+            padding: 5px 45px;
+            margin: 20px;
+            }
+.terminos{
+           border: solid 5px grey;
+           padding: 5px 10px;
+           margin: 20px;
+            }        
+
+/* ESTILOS FOOTER */
+
+.sinSubrayarFooter{
+    text-decoration: none;
+    color: wheat;
+    }
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Desktop */
+
+@media (min-width: 1024px){
+    nav{
+        background-color: rgba(0, 0, 0, 0.781);
+    }
+}
+
+/* TABLET */
+@media (min-width: 431px) and (max-width: 1023px){
+     body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+
+     .mainFooter{
+         bottom: 0%;
+         margin-top: auto;
+     }   
+     
+
+    
+     .logoImagenes{
+        width: 60%;
+        height: 50%;
+    }  
+ 
+              
+     .logo{
+         width: 70%;
+         height: 30%;
+     }   
+ }
+
+ /* SmartPhone */
+
+ @media (max-width: 430px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+
+     .mainFooter{
+         bottom: 0%;
+         margin-top: auto;
+     }   
+
+     nav span{
+        text-decoration: none;
+        background-color: rgb(9, 9, 9);
+        color: white;
+        margin: 5%;
+        padding: 10px 10px;
+        width: 35%;
+        border: ridge 10px rgb(246, 139, 9);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .logoImagenes{
+        width: 100%;
+        height: 70%;
+    }  
+
+    .logo{
+        width: 70%;
+        height: 20%;
+    }   
+
+    footer{
+        grid-area: footer;
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    
+ }
