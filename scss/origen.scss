@@ -5,10 +5,13 @@
    
 }
 
+
 body{
     width: 100%;
     height: 40vw;
 }
+
+@import "_mixin.scss";
 
 
 h1{
@@ -344,11 +347,12 @@ nav{
 /* Estilos de MAIN VIDEOS*/
 
 .videos{
-    width:  40vw;
-    height: 40vw;
+    @include tamanio(40vw,40vw);
     margin: 5%;
-    
-}
+    display: flex;
+    flex-direction: column;
+ }
+ 
 
 /* GRID RANKING */
 
@@ -381,7 +385,7 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-     span{
+    span{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
@@ -390,11 +394,11 @@ nav{
         width: 30%;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+        }
     span:hover{
         background-color: rgb(16, 162, 87);
         
-    } 
+        } 
 }
 
 .mainRanking{
@@ -435,30 +439,28 @@ section{
 
 
 .imagenUno{
-    background-image: url(../img/eventouno.png);
+    background-image: url(../img/eventouno-min.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 33vw;
     }
 
 .imagenDos{
-    background-image: url(../img/eventodos.png);
+    background-image: url(../img/eventodos-min.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 33vw;
     }
 
 .imagenTres{
-    background-image: url(../img/eventoseis.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 33vw;
+    @extend .imagenUno;
+    background-image: url(../img/eventoseis-min.png);
+   
     }   
 
 .imagenCuatro{
-    background-image: url(../img/eventocinco.png);
-    background-position: right;
-    background-repeat: no-repeat;
+    @extend.imagenDos;
+    background-image: url(../img/eventocinco-min.png);
     background-size: 28vw;
 }
 
@@ -550,7 +552,9 @@ form{
     border: solid 5px grey;
     padding: 5px 10px;
     margin: 20px;
+    background-color: aqua;
     }
+
 
 .password{
         border: solid 5px grey;
@@ -755,3 +759,16 @@ nav{
 
     
  }
+
+ $mapa:(
+    nombrecuenta: red,
+    contrasenia: rgb(49, 255, 12),
+);
+
+@each $nombres, $colorcito in $mapa {
+    .titulos-#{$nombres}{
+        background-color: $colorcito;
+    }
+}
+
+ 

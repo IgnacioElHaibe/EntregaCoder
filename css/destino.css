@@ -309,8 +309,6 @@ nav span:hover {
   width: 40vw;
   height: 40vw;
   margin: 5%;
-  display: flex;
-  flex-direction: column;
 }
 
 /* GRID RANKING */
@@ -384,26 +382,31 @@ section ol {
   line-height: 2;
 }
 
-.imagenUno, .imagenTres {
-  background-image: url(../img/eventouno-min.png);
+.imagenUno {
+  background-image: url(../img/eventouno.png);
   background-position: left;
   background-repeat: no-repeat;
   background-size: 33vw;
 }
 
-.imagenDos, .imagenCuatro {
-  background-image: url(../img/eventodos-min.png);
+.imagenDos {
+  background-image: url(../img/eventodos.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 33vw;
 }
 
 .imagenTres {
-  background-image: url(../img/eventoseis-min.png);
+  background-image: url(../img/eventoseis.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 33vw;
 }
 
 .imagenCuatro {
-  background-image: url(../img/eventocinco-min.png);
+  background-image: url(../img/eventocinco.png);
+  background-position: right;
+  background-repeat: no-repeat;
   background-size: 28vw;
 }
 
@@ -485,7 +488,6 @@ form {
   border: solid 5px grey;
   padding: 5px 10px;
   margin: 20px;
-  background-color: aqua;
 }
 
 .password {
@@ -668,13 +670,6 @@ nav span:hover {
     flex-wrap: nowrap;
     justify-content: space-around;
   }
-}
-.titulos-nombrecuenta {
-  background-color: red;
-}
-
-.titulos-contrasenia {
-  background-color: rgb(49, 255, 12);
 }
 
 /*# sourceMappingURL=destino.css.map */

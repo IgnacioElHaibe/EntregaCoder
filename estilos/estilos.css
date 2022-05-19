@@ -72,37 +72,6 @@ section{
     height: 80%;
 }
 
-/*
-.fondoWiki{
-    background-color: black;
-}
-
-article h2{
-    text-align: center;
-    color: rgb(5, 5, 5);
-    margin: -5px 5px;
-}
-
-li {
-    text-align: left;
-    color: rgb(15, 15, 15);
-    margin: 10px 10px;
-    font-weight: bolder;
-    line-height: 3;
-}
-
-li span{
-    font-style: italic;
-    text-decoration: none;
-    text-align: justify;
-    }
-
-.imagenFondoWiki{
-    background-image: url(../clase_0/img/logotp2.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 500px;
-}
 
 /* ESTILOS de MAIN IMAGENES */
 
