@@ -71,17 +71,18 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    span{
+    a{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
         margin: 1%;
         padding: 1%;
         width: 30%;
+        height: auto;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    span:hover{
+    a:hover{
         background-color: rgb(16, 162, 87);
         
     } 
@@ -148,17 +149,18 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    span{
+    a{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
         margin: 1%;
         padding: 1%;
         width: 30%;
+        height: auto;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    span:hover{
+    a:hover{
         background-color: rgb(16, 162, 87);
         
     } 
@@ -170,7 +172,7 @@ nav{
     justify-content: center;
     padding: 3%;
     margin: 3%;
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
@@ -189,8 +191,8 @@ nav{
 
 .sectionWiki{
     width: 100%;
-    height: 80%;
-}
+    height: 100%;
+    }
 
 /* GRID IMAGENES */
 
@@ -227,17 +229,18 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-     span{
+     a{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
         margin: 1%;
         padding: 1%;
         width: 30%;
+        height: auto;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    span:hover{
+    a:hover{
         background-color: rgb(16, 162, 87);
         
     } 
@@ -309,17 +312,18 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-     span{
+     a{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
         margin: 1%;
         padding: 1%;
         width: 30%;
+        height: auto;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    span:hover{
+    a:hover{
         background-color: rgb(16, 162, 87);
         
     } 
@@ -349,10 +353,21 @@ nav{
 .videos{
     @include tamanio(40vw,40vw);
     margin: 5%;
-    display: flex;
-    flex-direction: column;
  }
  
+ .divUno{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: left;
+ }
+
+ .divDos{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: right;
+ }
 
 /* GRID RANKING */
 
@@ -385,17 +400,18 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    span{
+    a{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
         margin: 1%;
         padding: 1%;
         width: 30%;
+        height: auto;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-    span:hover{
+    a:hover{
         background-color: rgb(16, 162, 87);
         
         } 
@@ -435,6 +451,18 @@ section{
         line-height: 2;
     }
 }
+
+.divRanking{
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+
 
 
 
@@ -497,17 +525,18 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-     span{
+     a{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
         margin: 1%;
         padding: 1%;
         width: 30%;
+        height: auto;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    span:hover{
+    a:hover{
         background-color: rgb(16, 162, 87);
         
     } 
@@ -540,7 +569,7 @@ form{
     text-align: center;
     margin: 30px 30px;
     padding: 80px 10px;
-    height: 40vw;
+    height: 10vw;
     line-height: 3;
     background-image: url(../img/logotp2.png);
     background-repeat: no-repeat;
@@ -552,15 +581,28 @@ form{
     border: solid 5px grey;
     padding: 5px 10px;
     margin: 20px;
-    background-color: aqua;
     }
 
 
-.password{
+.passwordAcceder{
         border: solid 5px grey;
         padding: 5px 39px;
         margin: 20px;
         }
+
+.videoAcceder{
+    width: 40vw;
+    height: 40vw;
+}
+
+.divTres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 0%;
+}
 
 
 /* GRID REGISTRARSE */
@@ -594,17 +636,18 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-     span{
+     a{
         text-decoration: none;
         background-color: rgb(9, 9, 9);
         color: white;
         margin: 1%;
         padding: 1%;
         width: 30%;
+        height: auto;
         border: ridge 10px rgb(246, 139, 9);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    span:hover{
+    a:hover{
         background-color: rgb(16, 162, 87);
         
     } 
@@ -662,7 +705,6 @@ nav{
             margin: 20px;
             }
 .terminos{
-           border: solid 5px grey;
            padding: 5px 10px;
            margin: 20px;
             }        
@@ -682,7 +724,13 @@ nav{
 
 @media (min-width: 1024px){
     nav{
-        background-color: rgba(0, 0, 0, 0.781);
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    .footerWiki{
+        bottom: 0%;
+        
     }
 }
 
@@ -694,12 +742,45 @@ nav{
         min-height: 100vh;
         }
 
+        nav{
+            grid-area: menu;
+            text-align: center;
+            margin: 0% 0%;
+            padding: 3%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+            a{
+                text-decoration: none;
+                background-color: rgb(9, 9, 9);
+                color: white;
+                margin: 1%;
+                padding: 1%;
+                width: 30%;
+                height: auto;
+                border: ridge 10px rgb(246, 139, 9);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                justify-content: center;
+            }
+            a:hover{
+                background-color: rgb(16, 162, 55);
+                
+                } 
+        }
+
+        .estiloFormulario{
+            height: 80vw;
+            background-position: bottom;
+        }
+
      .mainFooter{
          bottom: 0%;
          margin-top: auto;
      }   
      
-
+     
     
      .logoImagenes{
         width: 60%;
@@ -711,6 +792,35 @@ nav{
          width: 70%;
          height: 30%;
      }   
+
+     .imagenUno{
+        background-image: url(../img/eventouno-min.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 33vw;
+        margin: 30px 30px;
+        }
+    
+    .imagenDos{
+        background-image: url(../img/eventodos-min.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 33vw;
+        margin: 200px 200px;
+        }
+    
+    .imagenTres{
+        @extend .imagenUno;
+        background-image: url(../img/eventoseis-min.png);
+       
+        }   
+    
+    .imagenCuatro{
+        @extend.imagenDos;
+        background-image: url(../img/eventocinco-min.png);
+        background-size: 28vw;
+    }
+
  }
 
  /* SmartPhone */
@@ -727,15 +837,36 @@ nav{
          margin-top: auto;
      }   
 
-     nav span{
-        text-decoration: none;
-        background-color: rgb(9, 9, 9);
-        color: white;
-        margin: 5%;
-        padding: 10px 10px;
-        width: 35%;
-        border: ridge 10px rgb(246, 139, 9);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     nav{
+        grid-area: menu;
+        text-align: center;
+        margin: 0% 0%;
+        padding: 3%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        a{
+            text-decoration: none;
+            background-color: rgb(9, 9, 9);
+            color: white;
+            margin: 1%;
+            padding: 1%;
+            width: 30%;
+            height: auto;
+            border: ridge 10px rgb(246, 139, 9);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            justify-content: center;
+        }
+        a:hover{
+            background-color: rgb(16, 162, 87);
+            
+            } 
+    }
+     
+    .estiloFormulario{
+        height: 100vw;
+        background-position: bottom;
     }
 
     .logoImagenes{
@@ -757,18 +888,11 @@ nav{
         justify-content: space-around;
     }
 
+    .footerAcceder{
+        bottom: 0%;
+        position: fixed;
+    }
     
  }
-
- $mapa:(
-    nombrecuenta: red,
-    contrasenia: rgb(49, 255, 12),
-);
-
-@each $nombres, $colorcito in $mapa {
-    .titulos-#{$nombres}{
-        background-color: $colorcito;
-    }
-}
 
  

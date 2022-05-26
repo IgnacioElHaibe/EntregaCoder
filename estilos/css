@@ -59,17 +59,18 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav span {
+nav a {
   text-decoration: none;
   background-color: rgb(9, 9, 9);
   color: white;
   margin: 1%;
   padding: 1%;
   width: 30%;
+  height: auto;
   border: ridge 10px rgb(246, 139, 9);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-nav span:hover {
+nav a:hover {
   background-color: rgb(16, 162, 87);
 }
 
@@ -128,17 +129,18 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav span {
+nav a {
   text-decoration: none;
   background-color: rgb(9, 9, 9);
   color: white;
   margin: 1%;
   padding: 1%;
   width: 30%;
+  height: auto;
   border: ridge 10px rgb(246, 139, 9);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-nav span:hover {
+nav a:hover {
   background-color: rgb(16, 162, 87);
 }
 
@@ -148,7 +150,7 @@ nav span:hover {
   justify-content: center;
   padding: 3%;
   margin: 3%;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 
@@ -164,7 +166,7 @@ nav span:hover {
 /*Estilos main Wiki */
 .sectionWiki {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 /* GRID IMAGENES */
@@ -198,17 +200,18 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav span {
+nav a {
   text-decoration: none;
   background-color: rgb(9, 9, 9);
   color: white;
   margin: 1%;
   padding: 1%;
   width: 30%;
+  height: auto;
   border: ridge 10px rgb(246, 139, 9);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-nav span:hover {
+nav a:hover {
   background-color: rgb(16, 162, 87);
 }
 
@@ -271,17 +274,18 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav span {
+nav a {
   text-decoration: none;
   background-color: rgb(9, 9, 9);
   color: white;
   margin: 1%;
   padding: 1%;
   width: 30%;
+  height: auto;
   border: ridge 10px rgb(246, 139, 9);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-nav span:hover {
+nav a:hover {
   background-color: rgb(16, 162, 87);
 }
 
@@ -311,6 +315,20 @@ nav span:hover {
   margin: 5%;
 }
 
+.divUno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.divDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: right;
+}
+
 /* GRID RANKING */
 .gridRanking {
   display: grid;
@@ -338,17 +356,18 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav span {
+nav a {
   text-decoration: none;
   background-color: rgb(9, 9, 9);
   color: white;
   margin: 1%;
   padding: 1%;
   width: 30%;
+  height: auto;
   border: ridge 10px rgb(246, 139, 9);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-nav span:hover {
+nav a:hover {
   background-color: rgb(16, 162, 87);
 }
 
@@ -382,31 +401,36 @@ section ol {
   line-height: 2;
 }
 
-.imagenUno {
-  background-image: url(../img/eventouno.png);
+.divRanking {
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.imagenUno, .imagenTres {
+  background-image: url(../img/eventouno-min.png);
   background-position: left;
   background-repeat: no-repeat;
   background-size: 33vw;
 }
 
-.imagenDos {
-  background-image: url(../img/eventodos.png);
+.imagenDos, .imagenCuatro {
+  background-image: url(../img/eventodos-min.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 33vw;
 }
 
 .imagenTres {
-  background-image: url(../img/eventoseis.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 33vw;
+  background-image: url(../img/eventoseis-min.png);
 }
 
 .imagenCuatro {
-  background-image: url(../img/eventocinco.png);
-  background-position: right;
-  background-repeat: no-repeat;
+  background-image: url(../img/eventocinco-min.png);
   background-size: 28vw;
 }
 
@@ -437,17 +461,18 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav span {
+nav a {
   text-decoration: none;
   background-color: rgb(9, 9, 9);
   color: white;
   margin: 1%;
   padding: 1%;
   width: 30%;
+  height: auto;
   border: ridge 10px rgb(246, 139, 9);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-nav span:hover {
+nav a:hover {
   background-color: rgb(16, 162, 87);
 }
 
@@ -476,7 +501,7 @@ form {
   text-align: center;
   margin: 30px 30px;
   padding: 80px 10px;
-  height: 40vw;
+  height: 10vw;
   line-height: 3;
   background-image: url(../img/logotp2.png);
   background-repeat: no-repeat;
@@ -490,10 +515,24 @@ form {
   margin: 20px;
 }
 
-.password {
+.passwordAcceder {
   border: solid 5px grey;
   padding: 5px 39px;
   margin: 20px;
+}
+
+.videoAcceder {
+  width: 40vw;
+  height: 40vw;
+}
+
+.divTres {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 5%;
+  padding-top: 0%;
 }
 
 /* GRID REGISTRARSE */
@@ -523,17 +562,18 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav span {
+nav a {
   text-decoration: none;
   background-color: rgb(9, 9, 9);
   color: white;
   margin: 1%;
   padding: 1%;
   width: 30%;
+  height: auto;
   border: ridge 10px rgb(246, 139, 9);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-nav span:hover {
+nav a:hover {
   background-color: rgb(16, 162, 87);
 }
 
@@ -587,7 +627,6 @@ nav span:hover {
 }
 
 .terminos {
-  border: solid 5px grey;
   padding: 5px 10px;
   margin: 20px;
 }
@@ -602,7 +641,12 @@ nav span:hover {
 /* Desktop */
 @media (min-width: 1024px) {
   nav {
-    background-color: rgba(0, 0, 0, 0.781);
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .footerWiki {
+    bottom: 0%;
   }
 }
 /* TABLET */
@@ -611,6 +655,37 @@ nav span:hover {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+  }
+
+  nav {
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  nav a {
+    text-decoration: none;
+    background-color: rgb(9, 9, 9);
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+    height: auto;
+    border: ridge 10px rgb(246, 139, 9);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    justify-content: center;
+  }
+  nav a:hover {
+    background-color: rgb(16, 162, 55);
+  }
+
+  .estiloFormulario {
+    height: 80vw;
+    background-position: bottom;
   }
 
   .mainFooter {
@@ -627,6 +702,31 @@ nav span:hover {
     width: 70%;
     height: 30%;
   }
+
+  .imagenUno, .imagenTres {
+    background-image: url(../img/eventouno-min.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 33vw;
+    margin: 30px 30px;
+  }
+
+  .imagenDos, .imagenCuatro {
+    background-image: url(../img/eventodos-min.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 33vw;
+    margin: 200px 200px;
+  }
+
+  .imagenTres {
+    background-image: url(../img/eventoseis-min.png);
+  }
+
+  .imagenCuatro {
+    background-image: url(../img/eventocinco-min.png);
+    background-size: 28vw;
+  }
 }
 /* SmartPhone */
 @media (max-width: 430px) {
@@ -641,15 +741,35 @@ nav span:hover {
     margin-top: auto;
   }
 
-  nav span {
+  nav {
+    grid-area: menu;
+    text-align: center;
+    margin: 0% 0%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  nav a {
     text-decoration: none;
     background-color: rgb(9, 9, 9);
     color: white;
-    margin: 5%;
-    padding: 10px 10px;
-    width: 35%;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+    height: auto;
     border: ridge 10px rgb(246, 139, 9);
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    justify-content: center;
+  }
+  nav a:hover {
+    background-color: rgb(16, 162, 87);
+  }
+
+  .estiloFormulario {
+    height: 100vw;
+    background-position: bottom;
   }
 
   .logoImagenes {
@@ -670,6 +790,11 @@ nav span:hover {
     flex-wrap: nowrap;
     justify-content: space-around;
   }
+
+  .footerAcceder {
+    bottom: 0%;
+    position: fixed;
+  }
 }
 
-/*# sourceMappingURL=destino.css.map */
+/*# sourceMappingURL=css.map */
